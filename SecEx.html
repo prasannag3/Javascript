@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>JS Example
+    </title>
+
+    <script type="text/javascript">
+    function sub()
+    {
+        var val = document.getElementById('myText').value;
+
+        if(val.length == 0)
+        {
+          alert('Enter a real value in the text box');
+          return;
+        }
+        var mytitle = document.getElementById('title');
+        mytitle.innerHTML = val;
+    }
+  </script>
+  </head>
+  <body>
+    <h1 id="title">JS Example</h1>
+    <input type="text" id="myText"/>
+    <input type="submit" value="click Me" onclick="sub();">
+  </body>
+</html>

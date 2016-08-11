@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>functions
+    </title>
+    <script type="text/javascript">
+      var Scope = "global";
+      (function()
+      {
+        var Scope = "Inside function";
+        alert("Inside the function, scope is "+ Scope);
+      })();
+
+        alert("Outside the function, scope is "+ Scope);
+    </script>
+  </head>
+</html>
